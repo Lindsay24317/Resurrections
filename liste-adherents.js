@@ -17,7 +17,7 @@ function afficher() {
     ul.replaceChildren();
     for (const a of lireAdherents()) {
         const li = document.createElement("li");
-        li.textContent = `${a.nom} ${a.prenom} - ${a.date} - ${a.statut}`;// TODO : afficher l'objet, le statut...
+        li.textContent = `${a.nom} ${a.prenom} ${a.email} ${a.tel} - ${a.date} - ${a.statut}`;// TODO : afficher l'objet, le statut...
         ul.append(li);
     }
 }
@@ -26,7 +26,15 @@ document.getElementById("adherents-form-inscription").addEventListener("submit",
     e.preventDefault();
     const data = new FormData(e.target);
     const adherents = lireAdherents();
-    adherents.push({ id: Date.now(), nom: data.get("nom-adherent"), prenom: data.get("prenom-adherent"), statut: "actif", date: data.get("date") });
+    adherents.push({ 
+        id: Date.now(), 
+        nom: data.get("nom"), 
+        prenom: data.get("prenom"), 
+        email: data.get('email'), 
+        tel: data.get('telephone'), 
+        date: data.get("date"),
+        statut: "actif", 
+    });
     sauverAdherents(adherents);
     e.target.reset();
     afficher();

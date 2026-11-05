@@ -58,7 +58,7 @@ footer{
     color: white;
 }
 
-#form-inscription {
+#adherents-form-inscription {
     display: flex;
     flex-direction: column;
     gap: 10px;
