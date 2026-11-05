@@ -4,3 +4,52 @@ header { background: var(--principal); color: white; padding: 1rem; }
 main { max-width: 900px; margin: auto; padding: 1rem; }
 section { background: white; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
 label { display: block; margin-bottom: .5rem; }
+li{
+    list-style-type: none;
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.accueil{
+    background-color: #F5F3EA;
+    padding: 50px;
+    border-radius: 15px;
+}
+.information{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.carte{
+    color: white;
+    background-color: #2b6cb0;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+}
+.mission {
+    color: white;
+    background-color: #2b6cb0;
+    padding: 30px;
+    border-radius: 12px;
+}
+footer{
+    background-color: #2b6cb0;
+    color: white;
+}
