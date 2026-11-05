@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Café — La Clé à Molette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Formulaire d'inscription adhérents (Eva)-->
+    <section id="adherents-inscription">
+    <h2>Ajouter un adhérent</h2>
+        <form id="adherents-form-inscription">
+            <label for="nom">Nom <input type="text" id="nom-adherent" name="nom-adherent" required></label>
+            <label for="prenom">Prénom <input type="text" id="prenom-adherent" name="prenom-adherent" required></label>
+            <label for="date">Date d'inscription <input type="date" id="date" name="date" required></label>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <!-- Liste des adhérents (Eva)-->
+    <section id="liste-adherents">
+    <h2>Adhérents actifs</h2>
+        <ul id="adherents"></ul>
+    </section>
+
+    <script src="liste-adherents.js"></script>
+
+</body>
+</html>
