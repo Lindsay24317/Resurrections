@@ -4,6 +4,7 @@ header { background: var(--principal); color: white; padding: 1rem; }
 main { max-width: 900px; margin: auto; padding: 1rem; }
 section { background: white; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
 label { display: block; margin-bottom: .5rem; }
+
 li{
     list-style-type: none;
 }
@@ -55,4 +56,32 @@ ul{
 footer{
     background-color: #2b6cb0;
     color: white;
+}
+
+#form-inscription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font: inherit;
+    }
+  
+    button {
+      background: var(--principal);
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      opacity: 0.8;
+    }
 }

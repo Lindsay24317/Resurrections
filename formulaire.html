@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Café — La Clé à Molette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<section id="inscription">
+    <h2>Inscrire un objet</h2>
+  
+    <form id="form-inscription">
+  
+      <h3>Vos coordonnées</h3>
+  
+      <label>Nom
+        <input type="text" name="nom" required>
+      </label>
+  
+      <label>E-mail
+        <input type="email" name="email" required>
+      </label>
+  
+      <label>Téléphone
+        <input type="tel" name="telephone" required>
+      </label>
+  
+      <h3>Vos objets</h3>
+  
+      <div id="liste-objets">
+        <div class="objet">
+  
+          <label>Objet à réparer
+            <input type="text" name="objet" required>
+          </label>
+  
+          <label>Description du problème
+            <textarea name="description" required></textarea>
+          </label>
+  
+        </div>
+      </div>
+  
+      <button type="button" id="ajouter-objet">
+        + Ajouter un autre objet
+      </button>
+  
+      <button type="submit">Envoyer</button>
+  
+    </form>
+  </section>
+</body>
+</html>
